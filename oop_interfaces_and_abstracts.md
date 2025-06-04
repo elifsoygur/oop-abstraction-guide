@@ -23,7 +23,7 @@ public class Shape {
     }
 }
 Rule 3: An abstract class extends an abstract class, an interface extends another interface, but class implements interface.
-
+Example:
 interface Shape {
     void consumesMemory ();  
 }
@@ -64,7 +64,7 @@ abstract class Quadrilateral extends Shape {  //compile error
     }
 }
 Rule 6:If a non-abstract class extends an abstract class that implements an interface, the class is required to override both the abstract methods from the extended class and the methods from the interface.
-
+Example:
 interface Shape {
     void consumesMemory ();  
 }
@@ -83,9 +83,6 @@ public class Edge extends Quadrilateral {
     }
 }
 
-In summary, if the child class is abstract, it is not required to implement the abstract methods of the interface or abstract class.
-However, if the child class is not declared abstract (i.e., it is concrete), it must implement all the abstract methods from both the
-abstract class and the interface it implements.
 
 Rule 7:A class can extend only one class (No multiple inheritance). But a class can implement multiple interfaces.
 Also, interfaces can extend multiple interfaces.
@@ -93,4 +90,9 @@ Example:
 public class Shape extends Quadrilateral,Triangle{  //Error   // Quadrilateral,Triangle are classes.
 
 public class TV implements Usb, Screen{
+
+
+In summary, if the child class is abstract, it is not required to implement the abstract methods of the interface or abstract class.
+However, if the child class is not declared abstract (i.e., it is concrete), it must implement all the abstract methods from both the
+abstract class and the interface it implements.
 
