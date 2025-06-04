@@ -87,3 +87,10 @@ In summary, if the child class is abstract, it is not required to implement the 
 However, if the child class is not declared abstract (i.e., it is concrete), it must implement all the abstract methods from both the
 abstract class and the interface it implements.
 
+Rule 7:A class can extend only one class (No multiple inheritance). But a class can implement multiple interfaces.
+Also, interfaces can extend multiple interfaces.
+Example:
+public class Shape extends Quadrilateral,Triangle{  //Error   // Quadrilateral,Triangle are classes.
+
+public class TV implements Usb, Screen{
+
