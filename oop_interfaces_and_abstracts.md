@@ -91,6 +91,7 @@ public class Shape extends Quadrilateral,Triangle{  //Error   // Quadrilateral,T
 
 public class TV implements Usb, Screen{
 
+Rule 8: Interface can include both concrete and non concrete methods but concrete methods must be defined static or default. Abstract classes can include both concrete and non concrete methods.
 
 In summary, if the child class is abstract, it is not required to implement the abstract methods of the interface or abstract class.
 However, if the child class is not declared abstract (i.e., it is concrete), it must implement all the abstract methods from both the
